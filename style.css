@@ -1,0 +1,149 @@
+body, html{
+    padding: 0;
+    height: 100%;
+    margin: 0;
+}
+
+.container{
+    background-image: url("map.jpg"); 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .head{
+ font-size: 2rem;
+ text-align: center;
+ background-color: transparent;
+ overflow: hidden;
+ color: white;
+}
+
+.container .top{
+    background-color: transparent;
+    text-align: center;
+}
+.container .top a{
+    background-color:transparent;
+    text-decoration: none;
+    display: inline;
+    padding: 10px 70px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.container .top a:hover{
+    background-color: rgb(201, 200, 194);
+    color: black;
+    border-radius: 15px;
+}
+
+.app{
+    width: 20%;
+    margin: 100px auto;
+    background-color: rgba(184, 179, 178, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.app {
+    box-shadow: 7px 10px rgb(173, 163, 163);
+}
+
+.app > *{
+    margin-bottom: 20px;
+}
+
+.input-box{
+    width: 90%;
+    background-color: rgb(212, 198, 182);
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 4px;
+    padding: 0 10px;
+    text-align: center;
+
+}
+
+.input-box:focus{
+    background-color: rgb(224, 222, 219);
+}
+
+.weather-body{
+    color:rgb(71, 49, 49);
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(212, 198, 182);
+    height: 30vh;
+    font-size: 20px;
+}
+
+
+.location-details{
+    font-weight: bold;
+
+}
+
+.weather-status{
+    padding: 20px;
+}
+
+.temp{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-shadow: 2px 2px rgba(71, 49, 49, 0.3);
+}
+
+.min-max, .weather{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 982px){
+    .container .top{
+        float: left;
+        padding: 2px 4px;
+        text-align: left;
+        visibility: hidden;
+        display: none;
+    }
+
+    .container .top a{
+        visibility: hidden;
+        display: none;
+    }
+
+    .app{
+        text-align: center;
+        width: 30%;
+        margin: 100px auto;
+    }
+
+
+}
+
+@media screen and (max-width: 900px){
+    .app{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .app {
+        width: 50%;
+        margin: auto;
+        
+    }
+
+    .container .head{
+        font-size: 1rem;
+    }
+}
