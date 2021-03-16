@@ -140,7 +140,12 @@ body, html{
     .app {
         width: 50%;
         margin: auto;
+        height: 70vh;
         
+    }
+    
+    .weather-body{
+     height: 50vh;   
     }
 
     .container .head{
